@@ -1,0 +1,121 @@
+.contact {
+  background: var(--bg);
+}
+
+.contact__header {
+  max-width: 620px;
+  margin-bottom: 48px;
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 26px;
+  align-items: start;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact__info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 22px 24px;
+  border-radius: var(--radius-md);
+  transition: transform 0.35s var(--ease-out), border-color 0.35s var(--ease-out);
+}
+
+.contact__info-item:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-cyan);
+}
+
+.contact__info-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-cyan);
+}
+
+.contact__info-value {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 34px;
+  border-radius: var(--radius-lg);
+}
+
+.contact__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact__field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.contact__field input,
+.contact__field textarea {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  resize: vertical;
+  transition: border-color 0.3s var(--ease-out), background 0.3s var(--ease-out);
+}
+
+.contact__field input:focus,
+.contact__field textarea:focus {
+  outline: none;
+  border-color: var(--accent-violet);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.contact__field input.has-error,
+.contact__field textarea.has-error {
+  border-color: #f87171;
+}
+
+.contact__error {
+  font-size: 0.8rem;
+  color: #f87171;
+}
+
+.contact__submit {
+  margin-top: 6px;
+  width: 100%;
+}
+
+.contact__status {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.contact__status--success {
+  color: #34d399;
+}
+
+@media (max-width: 860px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+}
