@@ -2,7 +2,7 @@ import { useState } from "react";
 import useScrollReveal from "../hooks/useScrollReveal.js";
 import "./Contact.css";
 
-const CONTACT_EMAIL = "hello@zohaib.dev";
+const CONTACT_EMAIL = "zohaibinternship@gmail.com";
 
 const contactLinks = [
   { label: "Email", value: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}` },
